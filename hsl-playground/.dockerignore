@@ -1,0 +1,8 @@
+# node
+package-lock.json
+.nuxt/
+node_modules/
+*.log
+
+# MacOS
+.DS_Store
