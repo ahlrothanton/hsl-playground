@@ -96,4 +96,3 @@ sw.*
 *.tfstate.backup
 *.tfstate*backup
 .terraform
-.terraform.lock.hcl
