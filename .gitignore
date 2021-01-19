@@ -96,3 +96,4 @@ sw.*
 *.tfstate.backup
 *.tfstate*backup
 .terraform
+terraform/.terraform.tfstate.lock.info
