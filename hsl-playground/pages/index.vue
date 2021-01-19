@@ -38,7 +38,6 @@ export default {}
 }
 
 header {
-  background-color: blue;
   width: 60%;
   height: 50%;
   margin-bottom: 5px;
