@@ -3,6 +3,9 @@
 # Deploy the stack.
 
 
+# authenticate to Cloud SDK
+#gcloud auth application-default login
+
 # use Terraform to deploy the stack
 cd terraform
 terraform init -input=false

@@ -40,3 +40,11 @@ Deploy the stack.
     ./undeploy.sh
 
 Destroy the stack.
+
+## TODO
+
+- additional features to application
+  - show map for coordinates
+  - show beacons on map
+- multi stage docker image
+- cloud build for docker image
