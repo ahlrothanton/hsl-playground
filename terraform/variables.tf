@@ -20,3 +20,9 @@ variable "billing_account" {
   description = "What billing account is associated with this project"
   type        = string
 }
+
+variable "image_tag" {
+  description = "Tag for the Docker image"
+  type        = string
+  default     = "blue"
+}

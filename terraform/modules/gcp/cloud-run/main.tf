@@ -7,10 +7,6 @@ module "cloud-run-api" {
     api        = "run.googleapis.com"
 }
 
-locals {
-  service_revision = "${var.name}-${var.revision}"
-}
-
 resource "google_cloud_run_service" "cloud-run-service" {
   name     = var.name
   project  = var.project_id

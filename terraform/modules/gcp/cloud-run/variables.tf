@@ -18,8 +18,3 @@ variable "image" {
   description = "Container image to use for the service"
   type        = string
 }
-
-variable "revision" {
-  description = "Revision of the service"
-  type        = string
-}

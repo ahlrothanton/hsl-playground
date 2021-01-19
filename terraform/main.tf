@@ -1,8 +1,4 @@
 
-locals {
-  revision-tag = "blue"
-}
-
 # GCP Project
 module "project" {
   source          = "./modules/gcp/project"
@@ -25,7 +21,7 @@ module "docker-image" {
 
   project_id  = module.project.project_id
   name        = var.project_short
-  tag         = local.revision-tag
+  tag         = var.image_tag
 }
 
 # Cloud Run Service
@@ -36,7 +32,6 @@ module "cloud-run-service" {
   project_id  = module.project.project_id
   location    = var.location
   image       = module.docker-image.image
-  revision    = local.revision-tag
 
   depends_on = [
     module.docker-image,
